@@ -16,3 +16,5 @@ const Todo = ({ todo, removeTodo, completeTodo }) => {
 </div>
   )
 }
+
+export default Todo
