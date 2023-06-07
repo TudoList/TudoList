@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useState } from 'react'; 
+//gerenciamento de estado 
 
 const TodoForm = ({addTodo}) => {
     const [value, setValue] = useState("");
@@ -7,7 +8,9 @@ const TodoForm = ({addTodo}) => {
     const handleSubmit =(e) => {
         e.preventDefault();
         console.log(value, category)
-        if(!value || !category) return;
+        if(!value || !category) return; 
+        // adicionar todo 
+        //limpar os campos
 addTodo (value, category)
 setValue("");
 setCategory("");
